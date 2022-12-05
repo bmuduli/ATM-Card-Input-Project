@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css stylesheet file link  -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Making ATM card</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="card-container">
+           <!-- card front side  -->
+            <div class="front">
+                <div class="image">
+                    
+                    <img src="chip.png"  alt="chp">
+                    <img src="visa.png"  alt="logo">
+                </div>
+                <div class="card-box">#### #### #### ####</div>
+                <div class="flex-box">
+                    <div class="box">
+                        <span>Card Holder</span>
+                        <div class="cardholder-name">Full Name</div>
+                    </div>
+                    <div class="box">
+                        <span>Card Expiries</span>
+                        <div class="expiers">
+                            <span class="exp-month"> &nbsp; MM</span>
+                            <span class="exp-year"> &nbsp; &nbsp; YYYY</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card back side  -->
+            <div class="back">
+                <div class="res">
+                    <div class="box">
+                       <span>CVV</span>
+                       <div class="cvv-box"></div>
+                       <img src="visa.png" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+   <!-- input details  -->
+        <form action="">
+            <div class="input-box">
+                <span>Card Number</span>
+                <input type="text" maxlength="16" class="card-number-input" />
+            </div>
+
+            <div class="input-box">
+                <span>Card Holder</span>
+                <input type="text" class="card-holder-input" />
+            </div>
+
+            <div class="flex-box">
+                <!-- month input  -->
+                <div class="input-box">
+                    <span>Expire mm</span>
+                    <select name="" id="" class="month-input">
+                        <option value="Month" selected disabled>Month</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+
+                <!-- year input  -->
+                <div class="input-box">
+                    <span>Expire yyyy</span>
+                    <select name="" id="" class="year-input">
+                        <option value="Year" selected disabled>Year</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    </select>
+                </div>
+
+                <!-- cvv input  -->
+                <div class="input-box">
+                    <span>CVV</span>
+                    <input type="text" maxlength="4" class="cvv-input" />
+                </div>
+            </div>
+
+            <input type="submit" value="submit" class="submit-button" />
+        </form>
+    </div>
+
+    <!-- js file link  -->
+    <script src="script.js"></script>
+  
+</body>
+
+</html>
